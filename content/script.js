@@ -376,7 +376,7 @@ function draw(interp) {
     }
     
     fig.draw();
-    document.getElementById('score').innerHTML = 'Счёт: ' + score;
+    document.getElementsByClassName('score__number')[0].innerHTML = score.toString().padStart(6, '0');
 }
 
 function panic() {

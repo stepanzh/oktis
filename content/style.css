@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 24px;
+  font-size: 16px;
+  color: #484746;
 }
 #svg-wrapper {
   width: 100vw;
@@ -10,7 +11,7 @@ body {
   background-image: url('img/cropped.png');
   background-size: 100% 100%;
 }
-#score {
+.score {
   position: absolute;
   top: 25%;
   right: 5%;
@@ -19,6 +20,21 @@ body {
   background-color: rgba(0,0,0,0.5);
   color: white;
 }
+
+.score__caption {
+  font-size: 12px;
+}
+
+.score__number {
+  font-family: monospace;
+  font-weight: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+}
+
+.score__number,
+.btn {
+  font-size: 24px;
+}
+
 #svg-wrapper svg {
   position: absolute;
   left: 0;
@@ -43,10 +59,10 @@ body {
 }
 
 .btn {
-  font-size: 24px;
   padding: 12px 24px;
 
-  border: 1px solid black;
+/*   border: 1px solid black; */
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   text-align: center;
   
