@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: sans;
-  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 24px;
 }
 #svg-wrapper {
   width: 100vw;
@@ -14,7 +14,8 @@ body {
   position: absolute;
   top: 25%;
   right: 5%;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  border-radius: 16px;
   background-color: rgba(0,0,0,0.5);
   color: white;
 }
@@ -27,37 +28,34 @@ body {
 }
 #control {
   height: 20vh;
-  
+  padding: 0 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; 
 }
+
 #control__lr,
 #control__dr
 {
   display: flex;
-  margin: 0 10px;
-  width: 45%;
+  gap: 16px;
 }
-#control__lr .btn,
-#control__dr .btn
-{
-  width: 50%;
-}
+
 .btn {
-  padding: .25em .5em;
+  font-size: 24px;
+  padding: 12px 24px;
+
   border: 1px solid black;
-  border-radius: 2em;
+  border-radius: 12px;
   text-align: center;
   
-      user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -webkit-touch-callout: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-  
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+  -moz-user-select: none;
 }
 .btn:hover {
   cursor: pointer;
