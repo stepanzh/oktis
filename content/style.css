@@ -4,13 +4,29 @@ body {
   font-size: 16px;
   color: #484746;
 }
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+}
+
+.page-nav {
+  margin: 16px;
+}
+
+.nav__item {
+  padding: 8px 16px;
+}
+
 #svg-wrapper {
   width: 100vw;
-  height: 80vh;
+  height: 80%;
   position: relative;
   background-image: url('img/cropped.png');
   background-size: 100% 100%;
 }
+
 .score {
   position: absolute;
   top: 25%;
@@ -26,8 +42,7 @@ body {
 }
 
 .score__number {
-  font-family: monospace;
-  font-weight: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
 }
 
 .score__number,
@@ -43,7 +58,7 @@ body {
   height: 100%;
 }
 #control {
-  height: 20vh;
+  height: 20%;
   padding: 0 24px;
   display: flex;
   flex-direction: row;
